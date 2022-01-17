@@ -21,9 +21,11 @@ Create the environment you need like this:
     cosmosis-build-standard-library
 
 
-Now when you start a new work session, do this:
+Now when you start a new work session, do this (before starting ipython notebook):
 
     conda activate ./env
+    source cosmosis-configure
+
 
 
 

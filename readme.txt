@@ -40,7 +40,7 @@ Make sure you can run the notebook "Likelihood-Example", which shows how to comp
 
 - get the d value for every realization
 
-- take the range of d values (min and max) and construct the linear mapping from (0, 1) to (dmin, dmax) and from there to a choice of a realization with the nearest (or floor) d value
+- map the range (0, 1) -> (0, n_real - 1), then make a function that goes from (0, 1) -> a realization by rounding down to n and taking the n'th (sorted by d-value)  realization.
 
 - find a way to validate that randomly choosing a number from 0 to 1 gives you a random choice from the realizations
 
